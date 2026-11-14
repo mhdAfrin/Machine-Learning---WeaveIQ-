@@ -1,0 +1,9 @@
+,count
+raw_rows,121148
+raw_unique_ids,1009
+originally_missing_targets,98973
+recorded_target_rows,22175
+positive_production_candidates,19969
+candidate_unique_ids,946
+exact_repeats_beyond_first,10318
+distinct_full_records,9651
