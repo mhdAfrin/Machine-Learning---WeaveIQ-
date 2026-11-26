@@ -1,0 +1,30 @@
+{
+  "model": "Histogram Gradient Boosting",
+  "feature_version": "Engineered",
+  "parameters": {
+    "model__min_samples_leaf": 100,
+    "model__max_leaf_nodes": 15,
+    "model__max_iter": 200,
+    "model__loss": "absolute_error",
+    "model__learning_rate": 0.03,
+    "model__l2_regularization": 1.0
+  },
+  "random_seed": 42,
+  "folds": 5,
+  "shuffle_repeats": 5,
+  "native_threads": 1,
+  "python_version": "3.14.0",
+  "sklearn_version": "1.9.1",
+  "pandas_version": "3.1.1",
+  "numpy_version": "2.5.4",
+  "joblib_version": "1.6.0",
+  "original_sklearn_version": "1.9.1",
+  "version_matches_original": true,
+  "stored_validation_scores_reproduced_to_1e_6": true,
+  "development_sha256": "0b206a11b36607c92f8ff635d14533f5351dc3dba12495211892ab46c1a114d8",
+  "configuration_sha256": "112aa19f00b29d6d389e2784c7c35b6de4489626bb496699b0263b5fd939448c",
+  "test_files_read": false,
+  "saved_model_overwritten": false,
+  "runtime_seconds": 25.70035719999578,
+  "interpretation": "Exploratory reliance of a weak predictive model. Folds were previously used for tuning. Correlated inputs and implausible shuffled combinations can distort individual rankings. Raw-input importance includes downstream engineered features. Fold standard deviations are not confidence intervals; importance is not causal."
+}
