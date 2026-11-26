@@ -1,0 +1,102 @@
+[
+  {
+    "Feature_set": "Original",
+    "Model": "Ridge",
+    "Parameters": {
+      "model__alpha": 45.203536563602405
+    }
+  },
+  {
+    "Feature_set": "Original",
+    "Model": "Decision Tree",
+    "Parameters": {
+      "model__min_samples_leaf": 300,
+      "model__max_depth": 3,
+      "model__criterion": "absolute_error",
+      "model__ccp_alpha": 0.0
+    }
+  },
+  {
+    "Feature_set": "Original",
+    "Model": "Random Forest",
+    "Parameters": {
+      "model__n_estimators": 200,
+      "model__min_samples_leaf": 5,
+      "model__max_samples": 0.7,
+      "model__max_features": 0.5,
+      "model__max_depth": 8
+    }
+  },
+  {
+    "Feature_set": "Original",
+    "Model": "Extra Trees",
+    "Parameters": {
+      "model__n_estimators": 100,
+      "model__min_samples_leaf": 5,
+      "model__max_features": 1.0,
+      "model__max_depth": 8
+    }
+  },
+  {
+    "Feature_set": "Original",
+    "Model": "Histogram Gradient Boosting",
+    "Parameters": {
+      "model__min_samples_leaf": 100,
+      "model__max_leaf_nodes": 15,
+      "model__max_iter": 200,
+      "model__loss": "absolute_error",
+      "model__learning_rate": 0.03,
+      "model__l2_regularization": 1.0
+    }
+  },
+  {
+    "Feature_set": "Engineered",
+    "Model": "Ridge",
+    "Parameters": {
+      "model__alpha": 45.203536563602405
+    }
+  },
+  {
+    "Feature_set": "Engineered",
+    "Model": "Decision Tree",
+    "Parameters": {
+      "model__min_samples_leaf": 300,
+      "model__max_depth": 3,
+      "model__criterion": "absolute_error",
+      "model__ccp_alpha": 0.0
+    }
+  },
+  {
+    "Feature_set": "Engineered",
+    "Model": "Random Forest",
+    "Parameters": {
+      "model__n_estimators": 200,
+      "model__min_samples_leaf": 5,
+      "model__max_samples": 0.7,
+      "model__max_features": 0.5,
+      "model__max_depth": 8
+    }
+  },
+  {
+    "Feature_set": "Engineered",
+    "Model": "Extra Trees",
+    "Parameters": {
+      "model__n_estimators": 100,
+      "model__min_samples_leaf": 5,
+      "model__max_features": 1.0,
+      "model__max_depth": 8
+    }
+  },
+  {
+    "Feature_set": "Engineered",
+    "Model": "Histogram Gradient Boosting",
+    "Parameters": {
+      "model__min_samples_leaf": 100,
+      "model__max_leaf_nodes": 15,
+      "model__max_iter": 200,
+      "model__loss": "absolute_error",
+      "model__learning_rate": 0.03,
+      "model__l2_regularization": 1.0
+    }
+  }
+]

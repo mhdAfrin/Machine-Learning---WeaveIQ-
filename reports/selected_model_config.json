@@ -1,0 +1,35 @@
+{
+  "model": "Histogram Gradient Boosting",
+  "feature_version": "Engineered",
+  "parameters": {
+    "model__min_samples_leaf": 100,
+    "model__max_leaf_nodes": 15,
+    "model__max_iter": 200,
+    "model__loss": "absolute_error",
+    "model__learning_rate": 0.03,
+    "model__l2_regularization": 1.0
+  },
+  "selection_metric": "Mean grouped CV MAE",
+  "development_cv_MAE": 96.44000527169689,
+  "development_cv_RMSE": 454.6617896464894,
+  "development_cv_R2": -0.015309417240204848,
+  "input_columns": [
+    "Req_Finish_Fabrics",
+    "Fabric_Allowance",
+    "Shrink_allow",
+    "Req_grey_fabric",
+    "Req_beam_length(yds)",
+    "epi",
+    "ppi",
+    "Construction"
+  ],
+  "target": "Rej_and_cut_Piece",
+  "target_interpretation": "Recorded combined rejection-and-cut-piece amount",
+  "test_evaluated": true,
+  "development_fit_seconds": 0.8719484999965061,
+  "high_rejection_threshold": 297.0,
+  "high_rejection_rule": "Target >= development target 95th percentile",
+  "test_records": 3830,
+  "test_ids": 190,
+  "baseline_fit_seconds": 0.002586000002338551
+}

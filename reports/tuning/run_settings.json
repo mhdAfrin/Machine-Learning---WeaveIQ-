@@ -1,0 +1,150 @@
+{
+  "random_seed": 42,
+  "candidates_per_model_per_feature_version": 6,
+  "folds": 5,
+  "primary_metric": "MAE",
+  "search_parallel_jobs": 2,
+  "python_version": "3.14.0",
+  "sklearn_version": "1.9.1",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+  "search_spaces": {
+    "Ridge": {
+      "model__alpha": [
+        0.001,
+        0.0020433597178569417,
+        0.0041753189365604,
+        0.008531678524172814,
+        0.017433288221999882,
+        0.035622478902624426,
+        0.07278953843983153,
+        0.14873521072935117,
+        0.3039195382313198,
+        0.6210169418915616,
+        1.2689610031679222,
+        2.592943797404667,
+        5.298316906283713,
+        10.82636733874054,
+        22.122162910704503,
+        45.203536563602405,
+        92.36708571873865,
+        188.73918221350996,
+        385.6620421163472,
+        788.0462815669921,
+        1610.2620275609393,
+        3290.344562312671,
+        6723.357536499335,
+        13738.237958832638,
+        28072.162039411814,
+        57361.52510448681,
+        117210.22975334793,
+        239502.66199874907,
+        489390.0918477499,
+        1000000.0
+      ]
+    },
+    "Decision Tree": {
+      "model__criterion": [
+        "squared_error",
+        "absolute_error"
+      ],
+      "model__max_depth": [
+        3,
+        6,
+        12,
+        null
+      ],
+      "model__min_samples_leaf": [
+        5,
+        20,
+        100,
+        300
+      ],
+      "model__ccp_alpha": [
+        0.0,
+        0.1,
+        1.0,
+        10.0
+      ]
+    },
+    "Random Forest": {
+      "model__n_estimators": [
+        100,
+        200
+      ],
+      "model__max_depth": [
+        4,
+        8,
+        null
+      ],
+      "model__min_samples_leaf": [
+        5,
+        20,
+        100,
+        300
+      ],
+      "model__max_features": [
+        0.5,
+        1.0
+      ],
+      "model__max_samples": [
+        0.7,
+        null
+      ]
+    },
+    "Extra Trees": {
+      "model__n_estimators": [
+        100,
+        200
+      ],
+      "model__max_depth": [
+        4,
+        8,
+        null
+      ],
+      "model__min_samples_leaf": [
+        5,
+        20,
+        100,
+        300
+      ],
+      "model__max_features": [
+        0.5,
+        1.0
+      ]
+    },
+    "Histogram Gradient Boosting": {
+      "model__loss": [
+        "squared_error",
+        "absolute_error"
+      ],
+      "model__learning_rate": [
+        0.03,
+        0.05,
+        0.1
+      ],
+      "model__max_iter": [
+        100,
+        200,
+        300
+      ],
+      "model__max_leaf_nodes": [
+        7,
+        15,
+        31
+      ],
+      "model__min_samples_leaf": [
+        20,
+        50,
+        100,
+        200
+      ],
+      "model__l2_regularization": [
+        0.0,
+        1.0,
+        10.0,
+        100.0
+      ]
+    }
+  }
+}
